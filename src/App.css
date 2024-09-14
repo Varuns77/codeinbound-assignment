@@ -1,0 +1,132 @@
+#root {
+  max-width: 1200px; /* Changed max-width */
+  margin: 0 auto;
+  padding: 3rem; /* Increased padding */
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Verdana', sans-serif; /* Changed font */
+  background-color: #e9ecef; /* Updated background color */
+  color: #222; /* Changed text color */
+}
+
+.container {
+  max-width: 750px; /* Slightly reduced max-width */
+  margin: 0 auto;
+  padding: 25px; /* Increased padding */
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #655DBB; /* Changed color */
+  font-weight: 700; /* Increased font weight */
+}
+
+button {
+  background-color: #c1bedb; /* Changed background color */
+  padding: 12px 24px; /* Adjusted padding */
+  border: none;
+  border-radius: 8px; /* Increased border-radius */
+  cursor: pointer;
+  font-size: 1.1rem; /* Increased font size */
+  margin: 12px; /* Adjusted margin */
+  transition: background-color 0.4s; /* Modified transition duration */
+}
+
+button:disabled {
+  background-color: #adb5bd; /* Changed color */
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #9c96d7; /* Updated hover color */
+}
+
+.rating-options {
+  display: flex;
+  justify-content: space-evenly; /* Changed spacing method */
+  margin: 20px 0; /* Increased margin */
+}
+
+.rating-options label {
+  font-size: 1.4rem; /* Increased font size */
+  color: #555; /* Changed color */
+  display: inline-block;
+  width: 60px; /* Increased size */
+  height: 60px; /* Increased size */
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #cfd8dc; /* Changed background color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.rating-options input {
+  display: none; /* Hide the default radio button */
+}
+
+.rating-options input:checked + label {
+  background-color: #9c96d7; /* Updated selected color */
+  color: #fff; /* Ensured text color is white */
+}
+
+.text-area-input {
+  width: 100%;
+  height: 120px; /* Increased height */
+  border-radius: 8px; /* Increased border-radius */
+  padding: 12px; /* Adjusted padding */
+  border: 1px solid #ced4da; /* Changed border color */
+  font-size: 1.1rem; /* Increased font size */
+  outline: none;
+  transition: border-color 0.4s; /* Changed transition duration */
+}
+
+.text-area-input:focus {
+  border-color: #9c96d7; /* Updated focus border color */
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-buttons button {
+  margin: 8px; /* Adjusted margin */
+}
+
+.thank-you-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f3f5; /* Changed background color */
+  text-align: center;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.intro-container h1 {
+  font-size: 3rem; /* Increased font size */
+  color: #222; /* Updated color */
+}
+
+.start-survey-button {
+  padding: 16px 32px; /* Adjusted padding */
+  font-size: 1.3rem; /* Increased font size */
+  background-color: #9c96d7; /* Updated color */
+  border-radius: 10px; /* Increased border-radius */
+  cursor: pointer;
+}
